@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Job Autopilot – Automate Your Job Applications with AI',
-  description: 'AI-powered platform to tailor your resumes, auto-apply to jobs, and track everything — so you can land interviews faster.',
+  title: 'utomate Your Job Applications with AI',
+  description: 'Let our AI-powered platform apply for you',
   openGraph: {
     title: 'Job Autopilot – Automate Your Job Applications with AI',
     description: 'AI-powered resume tailoring, auto-apply, and job tracking — all in one tool.',
