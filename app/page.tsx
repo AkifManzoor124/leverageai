@@ -56,9 +56,14 @@ export default function Home() {
               <li>✔️ Manual Apply Tracking</li>
               <li>✔️ Feedback Surveys</li>
             </ul>
+            <a
+              href="https://tally.so/r/mezXEO"
+              target="_blank"
+            >
             <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
               Join Waitlist
             </button>
+          </a>
           </div>
           <div className="border p-6 rounded-lg text-center border-black shadow-lg">
             <h3 className="text-xl font-bold mb-2">Pro (Early Discount)</h3>
@@ -70,9 +75,14 @@ export default function Home() {
               <li>✔️ Email & HR Contact Finder</li>
               <li>✔️ Application Analytics</li>
             </ul>
-            <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
-              Reserve Discount
-            </button>
+            <a
+              href="https://tally.so/r/mezXEO"
+              target="_blank"
+            >
+              <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+                Reserve Discount
+              </button>
+            </a>
           </div>
           <div className="border p-6 rounded-lg text-center">
             <h3 className="text-xl font-bold mb-2">Future Teams</h3>
@@ -97,7 +107,7 @@ export default function Home() {
           Support the platform now and get lifetime discounts, exclusive access to beta features, and a voice in shaping the product.
         </p>
         <a
-          href="https://forms.gle/your-form-link"
+          href="https://tally.so/r/mezXEO"
           target="_blank"
           className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition"
         >
