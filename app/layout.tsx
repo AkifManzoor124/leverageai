@@ -14,18 +14,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'utomate Your Job Applications with AI',
-  description: 'Let our AI-powered platform apply for you',
+  title: 'Automate Your Job Applications with AI',
+  description: 'Built to think, not blast. Jobtra applies like a human would — only faster.',
   openGraph: {
-    title: 'Job Autopilot – Automate Your Job Applications with AI',
-    description: 'AI-powered resume tailoring, auto-apply, and job tracking — all in one tool.',
-    url: 'https://your-deployed-domain.com',
-    siteName: 'Job Autopilot',
+    title: 'Jobtra – Strategic Job Hunting, Automated',
+    description: 'Built to think, not blast. Jobtra applies like a human would — only faster.',
+    url: 'https://jobtra.ca/',
+    siteName: 'JobTra',
     images: [
       {
-        url: 'https://your-deployed-domain.com/og-image.png',
+        url: 'https://jobtra.ca/logo.png',
         width: 1200,
-        height: 630,
+        height: 730,
       },
     ],
     type: 'website',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Job Autopilot',
     description: 'Automate your job search with AI.',
-    images: ['https://your-deployed-domain.com/og-image.png'],
+    images: ['https://jobtra.ca/logo.png'],
   },
 };
 

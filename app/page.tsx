@@ -1,12 +1,27 @@
 // app/page.tsx
 export default function Home() {
   return (
+    <>
+    <header className="sticky top-0 z-50 bg-white shadow-sm">
+      <nav className="flex justify-center space-x-10 py-4 text-sm font-medium text-gray-700">
+        <a className="hover:text-black transition">JobTra</a>
+        <a href="#how-it-works" className="hover:text-black transition">How it Works</a>
+        <a href="#pricing" className="hover:text-black transition">Pricing</a>
+        <a href="#early-access" className="hover:text-black transition">Join the Waitlist</a>
+        <a 
+          href="https://sharing.clickup.com/10542198/b/5-90172327826-2/board" 
+          className="hover:text-black transition text-gray-900">
+          View Our Progress
+        </a>
+      </nav>
+    </header>
+
     <main className="min-h-screen bg-white text-gray-900">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-20">
-        <h1 className="text-5xl font-bold mb-4">Automate Your Job Applications</h1>
+        <h1 className="text-5xl font-bold mb-4">Strategize Your Job Applications with AI</h1>
         <p className="text-lg max-w-xl mb-6">
-          Personalized resumes. One-click job apply. Track everything. Powered by AI — built for job seekers who value time and precision.
+          Built for people who want to stop spraying resumes and start landing dream roles faster.
         </p>
         <a
           href="#early-access"
@@ -14,6 +29,9 @@ export default function Home() {
         >
           Join Early Access
         </a>
+        <p className="py-1 px-3 text-center text-xs text-gray-500">
+          *We use tally.so to collect form data <br />
+        </p>
       </section>
 
       {/* Problem Section */}
@@ -25,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-16 px-6 text-center">
+      <section className="py-16 px-6 text-center" id="how-it-works">
         <h2 className="text-3xl font-semibold mb-4">Here’s How It Works</h2>
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mt-10">
           <div>
@@ -79,8 +97,11 @@ export default function Home() {
               href="https://tally.so/r/mezXEO"
               target="_blank"
             >
-              <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+              {/* <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
                 Reserve Discount
+              </button> */}
+              <button className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800">
+              Join Waitlist
               </button>
             </a>
           </div>
@@ -113,6 +134,9 @@ export default function Home() {
         >
           Join Early Access
         </a>
+        <p className="py-3 px-3 text-center text-xs text-gray-500">
+          *We use tally.so to collect form data <br />
+        </p>
       </section>
 
       {/* Footer */}
@@ -123,5 +147,6 @@ export default function Home() {
         </span>
       </footer>
     </main>
+    </>
   );
 }
