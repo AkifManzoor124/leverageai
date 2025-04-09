@@ -1,55 +1,34 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import "./globals.css";
-
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import './globals.css';
+import type { Metadata, Viewport } from 'next';
+import { Manrope } from 'next/font/google';
+import { UserProvider } from '@/lib/auth';
+import { getUser } from '@/lib/db/queries';
 
 export const metadata: Metadata = {
-  title: 'Automate Your Job Applications with AI',
-  description: 'Built to think, not blast. Jobtra applies like a human would — only faster.',
-  openGraph: {
-    title: 'Jobtra – Strategic Job Hunting, Automated',
-    description: 'Built to think, not blast. Jobtra applies like a human would — only faster.',
-    url: 'https://jobtra.ca/',
-    siteName: 'JobTra',
-    images: [
-      {
-        url: 'https://jobtra.ca/logo.png',
-        width: 1200,
-        height: 730,
-      },
-    ],
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Job Autopilot',
-    description: 'Automate your job search with AI.',
-    images: ['https://jobtra.ca/logo.png'],
-  },
+  title: 'Next.js SaaS Starter',
+  description: 'Get started quickly with Next.js, Postgres, and Stripe.',
 };
+
+export const viewport: Viewport = {
+  maximumScale: 1,
+};
+
+const manrope = Manrope({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
+  let userPromise = getUser();
+
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html
+      lang="en"
+      className={`bg-white dark:bg-gray-950 text-black dark:text-white ${manrope.className}`}
+    >
+      <body className="min-h-[100dvh] bg-gray-50">
+        <UserProvider userPromise={userPromise}>{children}</UserProvider>
       </body>
     </html>
   );
